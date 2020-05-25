@@ -1,0 +1,7 @@
+Pink = 500 - Always Primary - favorate
+Light Green = 500 - favorate
+Yellow = 500 
+Orange = A700 - favorate
+Purple = 500
+Cyan = 500
+Teal = A400

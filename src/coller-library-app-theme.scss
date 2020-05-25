@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$coller-library-app-primary: mat-palette($mat-pink, 500, 300, 700);
+$coller-library-app-accent: mat-palette($mat-light-green, 500, 400, 600);
+$coller-library-app-warn: mat-palette($mat-orange, A700, A200, 900);
+$coller-library-background-color: map_get($mat-grey, 50);
+
+$coller-library-app-theme: mat-light-theme($coller-library-app-primary, $coller-library-app-accent, $coller-library-app-warn);
+
+$background: map-get($coller-library-app-theme, background);
+$background: map-merge($background, (background : $coller-library-background-color));
+$coller-library-app-theme: map_merge($coller-library-app-theme, (background: $background));
+
+@include angular-material-theme($coller-library-app-theme);
